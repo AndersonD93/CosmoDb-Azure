@@ -1,0 +1,114 @@
+--Registro de documentos de ejemplo
+--Base de datos NO SQL clave de partición id 
+
+{
+    "id": "1",
+    "name": "Batman",
+    "owner": "DC",
+    "actors": {
+        "datos": [
+            {
+                "actorname": "leo Davinci",
+                "direccion": "Cra41-54"
+            },
+            {
+                "actorname": "mateo",
+                "direccion": "Cra52 83-43"
+            }
+        ]
+    },
+    "_rid": "YmFmAM1rX+ABAAAAAAAAAA==",
+    "_self": "dbs/YmFmAA==/colls/YmFmAM1rX+A=/docs/YmFmAM1rX+ABAAAAAAAAAA==/",
+    "_etag": "\"00000600-0000-0100-0000-639388a40000\"",
+    "_attachments": "attachments/",
+    "_ts": 1670613156
+}
+
+
+{
+    "id": "2",
+    "name": "Hulk",
+    "owner": "Marvel Studio",
+    "actors": {
+        "datos": [
+            {
+                "actorname": "andres Rodriguez",
+                "direccion": "Cra71-4w"
+            },
+            {
+                "actorname": "sergio",
+                "direccion": "Cra7"
+            }
+        ]
+    },
+    "_rid": "YmFmAM1rX+ACAAAAAAAAAA==",
+    "_self": "dbs/YmFmAA==/colls/YmFmAM1rX+A=/docs/YmFmAM1rX+ACAAAAAAAAAA==/",
+    "_etag": "\"34005512-0000-0100-0000-6390999c0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1670420892
+}
+
+{
+    "id": "3",
+    "name": "Capitan America",
+    "owner": "Marvel Studio",
+    "actors": {
+        "datos": [
+            {
+                "actorname": "Daniel",
+                "direccion": "Cra20-430"
+            }
+        ]
+    },
+    "_rid": "YmFmAM1rX+ADAAAAAAAAAA==",
+    "_self": "dbs/YmFmAA==/colls/YmFmAM1rX+A=/docs/YmFmAM1rX+ADAAAAAAAAAA==/",
+    "_etag": "\"00000200-0000-0100-0000-63935a550000\"",
+    "_attachments": "attachments/",
+    "_ts": 1670601301
+}
+
+{
+    "id": "4",
+    "name": "Iron Man",
+    "owner": "Marvel S",
+    "actors": {
+        "datos": [
+            {
+                "actorname": "Paco Grisales",
+                "direccion": "cra 8 "
+            },
+            {
+                "actorname": "sergio",
+                "direccion": "Cra7"
+            }
+        ]
+    },
+    "_rid": "YmFmAM1rX+AEAAAAAAAAAA==",
+    "_self": "dbs/YmFmAA==/colls/YmFmAM1rX+A=/docs/YmFmAM1rX+AEAAAAAAAAAA==/",
+    "_etag": "\"2400ac16-0000-0100-0000-638f4e6e0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1670336110
+}
+
+{
+    "id": "5",
+    "name": "Spider-man",
+    "owner": "Marvel Studios",
+    "actors": {
+        "datos": [
+            {
+                "actorname": "lucas hernandez",
+                "direccion": "cra 11-8 "
+            },
+            {
+                "actorname": "Tiago Almada",
+                "direccion": "Cra64"
+            }
+        ]
+    },
+    "_rid": "YmFmAM1rX+AFAAAAAAAAAA==",
+    "_self": "dbs/YmFmAA==/colls/YmFmAM1rX+A=/docs/YmFmAM1rX+AFAAAAAAAAAA==/",
+    "_etag": "\"00000100-0000-0100-0000-6393392d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1670592813
+}
