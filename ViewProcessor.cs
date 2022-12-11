@@ -173,36 +173,45 @@ namespace Azure.Samples.Processor
             Datos data = JsonConvert.DeserializeObject<Datos>(actors.datos1);
             data1.datos = data.datos;
 
-            foreach (var item in data1.datos)
-            {
-                Console.WriteLine(item.actorname);
-            }
-
-            //data1 = JsonConvert.DeserializeObject<Actors>(actors.datos1);
-
-
-            //log.LogInformation("Document: " + viewSingle.ToString());
 
             if (viewSingle == null)
             {
                 _log.LogInformation("Creating new materialized view :");
+                List<ObjAtributosActor> list = new List<ObjAtributosActor>();
+                foreach (var item in data1.datos)
+                {
+                   
+                    ObjAtributosActor atributos = new ObjAtributosActor();
+                    atributos.actorname = item.actorname;
+                    atributos.direccion = item.direccion;
 
-               
+                    list.Add(atributos);
 
-                var propiedad= GetPropertyValue(actors, "Actors.datos");
-
+                }
                 viewSingle = new HeroActorsMaterializedView()
                 {
                     id = actors.id,
-                    
+                    datos = list
                 };
+
             }
             else
             {
                 _log.LogInformation("Updating materialized view");
                 viewSingle.id = actors.id;
-                //viewSingle.actors = getDatosActor(heroactors);
-                //viewSingle.owner = hero.owner;
+                List<ObjAtributosActor> list = new List<ObjAtributosActor>();
+                foreach (var item in data1.datos)
+                {
+
+                    ObjAtributosActor atributos = new ObjAtributosActor();
+                    atributos.actorname = item.actorname;
+                    atributos.direccion = item.direccion;
+
+                    list.Add(atributos);
+
+                }
+                viewSingle.datos = list;
+               
             }
 
             await UpsertDocument(viewSingle, optionsSingle);

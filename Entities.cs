@@ -46,7 +46,6 @@ namespace Azure.Samples.Entities
 
         [JsonProperty("owner")]
         public string owner;
-        internal object datos;
     }
 
     public class HeroActorsMaterializedView
@@ -55,7 +54,7 @@ namespace Azure.Samples.Entities
         public string id;
 
         [JsonProperty("actors")]
-        public string [] actors;
+        public List<ObjAtributosActor> datos;
 
     }
 
